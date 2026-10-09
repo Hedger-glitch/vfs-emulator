@@ -1,0 +1,6 @@
+# Тестовый скрипт
+ls -la
+cd /
+unknowncmd
+cd /home
+exit
