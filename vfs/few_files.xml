@@ -1,0 +1,9 @@
+<vfs name="few">
+  <dir name="/">
+    <file name="a.txt" content="QQ=="/>
+    <file name="b.txt" content="Qg=="/>
+    <dir name="docs">
+      <file name="guide.txt" content="R3VpZGU="/>
+    </dir>
+  </dir>
+</vfs>

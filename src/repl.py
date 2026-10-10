@@ -1,8 +1,8 @@
 """REPL-цикл эмулятора оболочки."""
 from pathlib import Path
 
+from src.vfs import Vfs
 from src.commands import cmd_ls, cmd_cd
-from src.config import Config
 from src.parser import parse_command
 
 STUB_COMMANDS = {"ls": cmd_ls, "cd": cmd_cd}
@@ -10,10 +10,10 @@ STUB_COMMANDS = {"ls": cmd_ls, "cd": cmd_cd}
 
 class Repl:
     """Интерактивная оболочка."""
-
-    def __init__(self, config: Config) -> None:
+    def __init__(self, config, vfs):
         self.config = config
-        self.vfs_name = config.vfs_name
+        self.vfs = vfs
+        self.vfs_name = vfs.name
         self.running = True
         self._debug_dump()
 

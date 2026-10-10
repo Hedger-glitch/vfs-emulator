@@ -12,9 +12,22 @@ class Config:
 def parse_args(argv: list[str]) -> Config:
     """Разбирает аргументы командой строки в объект Config."""
     parser = argparse.ArgumentParser(prog="vfs-emulator")
-    parser.add_argument("--vfs", type=Path, help="Путь к файлу VFS")
-    parser.add_argument("--script", type=Path, help="Путь к стартовому скрипту")
-    parser.add_argument("--name", default="myvfs", help="Имя VFS для приглашения")
+
+    parser.add_argument("--vfs",
+        type=Path,
+        help="Путь к файлу VFS"
+    )
+
+    parser.add_argument("--script",
+        type=Path,
+        help="Путь к стартовому скрипту"
+    )
+
+    parser.add_argument("--name",
+         default="myvfs",
+        help="Имя VFS для приглашения"
+    )
+
     ns = parser.parse_args(argv[1:])
     return Config(
         vfs_path=ns.vfs,

@@ -1,0 +1,12 @@
+# Стартовый скрипт для Этапа 3
+# Проверяет команды ls, cd и обработку ошибок на VFS
+
+ls
+ls /
+ls readme.txt
+cd /
+cd docs
+cd ..
+unknowncmd
+ls
+exit
