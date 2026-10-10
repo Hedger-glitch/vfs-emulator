@@ -2,6 +2,7 @@
   <dir name="/">
     <file name="a.txt" content="QQ=="/>
     <file name="b.txt" content="Qg=="/>
+    <file name="words.txt" content="SGVsbG8KSGVsbG8KV29ybGQ="/>
     <dir name="docs">
       <file name="guide.txt" content="R3VpZGU="/>
     </dir>
