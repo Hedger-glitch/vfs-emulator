@@ -1,0 +1,19 @@
+# Стартовый скрипт Этапа 4
+# Проверяет ls, cd, rev, uniq, head и обработку ошибок
+
+ls
+ls /
+cd docs
+ls
+cd ..
+ls docs
+ls docs/guide.txt
+rev words.txt
+uniq words.txt
+head -2 words.txt
+head words.txt
+cd nonexistent
+ls nonexistent
+rev /no/such/file
+head words.txt extra_argument_ignored
+exit
