@@ -1,0 +1,11 @@
+<vfs name="deep">
+  <dir name="/">
+    <dir name="level1">
+      <dir name="level2">
+        <dir name="level3">
+          <file name="deep.txt" content="ZGVlcA=="/>
+        </dir>
+      </dir>
+    </dir>
+  </dir>
+</vfs>
