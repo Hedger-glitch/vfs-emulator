@@ -1,7 +1,9 @@
 """REPL-цикл эмулятора оболочки."""
 from pathlib import Path
 
-from src.commands import cmd_ls, cmd_cd, cmd_rev, cmd_uniq, cmd_head
+from src.commands import (
+    cmd_ls, cmd_cd, cmd_rev, cmd_uniq, cmd_head, cmd_mv, cmd_chmod,
+)
 from src.parser import parse_command
 from src.shell import ShellState
 
@@ -11,6 +13,8 @@ COMMANDS = {
     "rev": cmd_rev,
     "uniq": cmd_uniq,
     "head": cmd_head,
+    "mv": cmd_mv,
+    "chmod": cmd_chmod,
 }
 
 

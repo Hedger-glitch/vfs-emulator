@@ -11,10 +11,11 @@ class VfsError(Exception):
 class VfsNode:
     """Узел дерева: либо папка, либо файл."""
 
-    def __init__(self, name, is_dir, content=b""):
+    def __init__(self, name, is_dir, content=b"", mode=0o644):
         self.name = name
         self.is_dir = is_dir
         self.content = content
+        self.mode = mode
         self.children = {}
 
     def add_child(self, node):

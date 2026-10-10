@@ -1,0 +1,17 @@
+# Стартовый скрипт Этапа 5
+# Проверяет mv, chmod и обработку ошибок
+
+ls
+mv a.txt renamed.txt
+ls
+mv renamed.txt docs/
+ls
+ls docs
+chmod 755 docs/guide.txt
+chmod 600 words.txt
+chmod abc words.txt
+mv
+mv несуществующий.txt target.txt
+mv words.txt docs/
+ls docs
+exit
